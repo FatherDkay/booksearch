@@ -71,8 +71,9 @@ window.location.reload()
         <h2>
           {loading
           
-            ? `Viewing ${books.length} saved ${books.length === 1 ? 'book' : 'books'}:`
-            : 'You have no saved books!'}
+            // ? `Viewing ${books.length} saved ${books.length === 1 ? 'book' : 'books'}:`
+            // : 'You have no saved books!'}
+          }
         </h2>
         <CardColumns>
           {loading?"No book found":books.map((book) => {
