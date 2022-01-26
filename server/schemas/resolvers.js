@@ -13,7 +13,6 @@ const resolvers = {
 
       throw new AuthenticationError('Not logged in');
     },
-
   },
 
   Mutation: {
@@ -42,13 +41,11 @@ const resolvers = {
     saveBook: async (parent,{BookData}, context) => {
       if (context.user) {
 
-
         const user = await User.findByIdAndUpdate(
           { _id: context.user._id },
           { $push: { savedBooks: BookData} },
           { new: true }
         );
-
         return user;
       }
 
@@ -64,7 +61,6 @@ const resolvers = {
 
         return updatedUser;
       }
-
       throw new AuthenticationError('You need to be logged in!');
     }
   }
