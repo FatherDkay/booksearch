@@ -6,6 +6,8 @@
 * [Contribution](#contribution)
 * [License](#license)
 * [GitHub User Name / Email](#user)
+* [Screenshot](#screenshot)
+
 ## Description
 This is a project that can find books based on search criteria
 
@@ -28,3 +30,6 @@ https://www.github.com/FatherDkay
 
 ## Email
 paul.d.bailey@hotmail.com
+
+## Screenshot
+![ScreenShot](/assets/BookSearchScreenshot.jpg "Screen Shot of BookSearch App")
